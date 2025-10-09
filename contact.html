@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mitombili SDA Church</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mitombili SDA Church</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Get in Touch</h2>
+        <p>Email us at: <a id="church-email" href="mailto:info@mitombilisda.org">info@mitombilisda.org</a></p>
+        <script>
+            // Example of making the email reactive (updates dynamically)
+            document.addEventListener('DOMContentLoaded', function() {
+            const email = "info@mitombilisda.org";
+            document.getElementById('church-email').textContent = email;
+            document.getElementById('church-email').href = "mailto:" + email;
+            });
+        </script>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Mitombili SDA Church. All rights reserved.</p>
+    </footer>
+</body>
+</html>
